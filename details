@@ -1,0 +1,20 @@
+Display books
+      --- all the books
+      -- status of books 
+
+Issue books 
+        -- User can issue books based on status 
+        -- it will also contain the details of borrower
+                --- username 
+                --- date and time 
+
+Add books 
+        -- add or donate to library 
+        -- user will add book details 
+        -- and system will generate unique id against that books
+
+
+Return Books
+        --- user can reture the books using the id 
+        -- add update the status 
+        
