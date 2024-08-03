@@ -1,0 +1,51 @@
+book_id,title,author,publisher,publication_year,genre,availability,quantity
+1,The Hitchhiker's Guide to the Galaxy,Douglas Adams,Pan Macmillan,1979,Science Fiction,Available,2
+2,To Kill a Mockingbird,Harper Lee,HarperCollins,1960,Fiction,Available,3
+3,Pride and Prejudice,Jane Austen,Penguin Classics,1813,Romance,Not Available,1
+4,The Lord of the Rings,J.R.R. Tolkien,Allen & Unwin,1954,Fantasy,Available,4
+5,1984,George Orwell,Secker & Warburg,1949,Dystopian,Available,5
+6,Animal Farm,George Orwell,Secker & Warburg,1945,Allegory,Available,3
+7,The Great Gatsby,F. Scott Fitzgerald,Charles Scribner's Sons,1925,Classic,Available,2
+8,The Catcher in the Rye,J.D. Salinger,Little, Brown and Company,1951,Coming-of-age,Available,4
+9,Brave New World,Aldous Huxley,Chatto & Windus,1932,Dystopian,Available,3
+10,The Grapes of Wrath,John Steinbeck,Viking Press,1939,Realism,Available,2
+11,One Hundred Years of Solitude,Gabriel García Márquez,Sudamericana,1967,Magical Realism,Available,1
+12,Crime and Punishment,Fyodor Dostoevsky,Russkiy Vestnik,1866,Psychological Fiction,Available,3
+13,Moby-Dick,Herman Melville,Harper & Brothers,1851,Adventure,Available,2
+14,War and Peace,Leo Tolstoy,Russkiy Vestnik,1869,Historical Fiction,Available,4
+15,Don Quixote,Miguel de Cervantes,Juan de la Cuesta,1605,Adventure,Available,3
+16,Ulysses,James Joyce,Sylvia Beach,1922,Modernist,Available,2
+17,Hamlet,William Shakespeare,First Quarto,1603,Tragedy,Available,4
+18,The Odyssey,Homer,Unknown,8th century BC,Epic Poetry,Available,3
+19,The Iliad,Homer,Unknown,8th century BC,Epic Poetry,Available,2
+20,Frankenstein,Mary Shelley,William Godwin,1818,Science Fiction,Available,4
+21,Jane Eyre,Charlotte Brontë,Smith, Elder & Co.,1847,Gothic,Available,3
+22,Wuthering Heights,Emily Brontë,T. & W. Boone,1847,Romantic,Available,2
+23,The Picture of Dorian Gray,Oscar Wilde,Ward Lock & Co.,1890,Psychological Fiction,Available,4
+24,Heart of Darkness,Joseph Conrad,Blackwood's Magazine,1899,Psychological Fiction,Available,3
+25,Madame Bovary,Gustave Flaubert,Michel Lévy frères,1856,Realism,Available,2
+26,Anna Karenina,Leo Tolstoy,Russkiy Vestnik,1873,Realism,Available,4
+27,The Brothers Karamazov,Fyodor Dostoevsky,Russkiy Vestnik,1880,Philosophical Fiction,Available,3
+28,The Count of Monte Cristo,Alexandre Dumas,Magasin des littératures et des arts étrangers,1844,Adventure,Available,2
+29,Les Misérables,Victor Hugo,La Presse,1862,Historical Fiction,Available,4
+30,The Red Badge of Courage,Stephen Crane,D. Appleton and Company,1895,Realism,Available,3
+31,The Adventures of Huckleberry Finn,Mark Twain,Charles L. Webster & Company,1885,Adventure,Available,2
+32,The Jungle,Upton Sinclair,Doubleday,Page & Company,1906,Social Realism,Available,4
+33,The Call of the Wild,Jack London,Macmillan,1903,Adventure,Available,3
+34,Of Mice and Men,John Steinbeck,Covici Friede,1937,Novella,Available,2
+35,The Sound and the Fury,William Faulkner,Jonathan Cape and Harrison Smith,1929,Modernist,Available,4
+36,As I Lay Dying,William Faulkner,Liveright Publishing Corporation,1930,Modernist,Available,3
+37,Light in August,William Faulkner,Harper & Brothers,1932,Southern Gothic,Available,2
+38,Absalom, Absalom!,William Faulkner,Harper & Brothers,1936,Historical Fiction,Available,4
+39,Go Down, Moses,William Faulkner,Random House,1942,Southern Gothic,Available,3
+40,The Recognitions,William Gaddis,Harcourt, Brace & World,1955,Experimental,Available,2
+41,Lolita,Vladimir Nabokov,Olympia Press,1955,Controversial,Available,4
+42,Catch-22,Joseph Heller,Simon & Schuster,1961,Satire,Available,3
+43,One Flew Over the Cuckoo's Nest,Ken Kesey,Viking Press,1962,Satire,Available,2
+44,In Cold Blood,Truman Capote,Random House,1966,True Crime,Available,4
+45,Midnight's Children,Salman Rushdie,Jonathan Cape,1981,Magical Realism,Available,3
+46,Beloved,Toni Morrison,Alfred A. Knopf,1987,Historical Fiction,Available,2
+47,The Handmaid's Tale,Margaret Atwood,McClelland & Stewart,1985,Dystopian,Available,4
+48,Cloud Atlas,David Mitchell,Hodder & Stoughton,2004,Metafiction,Available,3
+49,Life of Pi,Yann Martel,Canongate Books,2001,Adventure,Available,2
+50,The Road,Cormac McCarthy,Alfred A. Knopf,2006,Post-apocalyptic,Available,4
