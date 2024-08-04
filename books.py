@@ -1,3 +1,4 @@
+import csv
 class Book:
     
     ___CSV_FILE = "list_of_books.csv"
