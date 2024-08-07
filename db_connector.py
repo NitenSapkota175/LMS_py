@@ -14,7 +14,3 @@ mydb = mysql.connector.connect(
 )
 
 mycursor = mydb.cursor()
-mycursor.execute("SELECT * FROM books")
-
-for i in mycursor:
-    print(i)
