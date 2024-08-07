@@ -28,7 +28,16 @@ class Book:
             return book_objects
 
 
+    @classmethod
+    def get_book_by_Id(cls,book_id):
+         
+         books = Book.get_all_books()
 
+         for book in books:
+              if book.book_id == book_id and book.quantity > 0:
+                   return True
+         else:
+            return False
 
         
         
