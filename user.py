@@ -8,7 +8,6 @@ class User:
             self.first_name = first_name
             self.last_name = last_name
             self.phone_number = phone_number
-            self.borrowing_history = []
             self.fines = fines
         
     @classmethod
@@ -37,7 +36,29 @@ class User:
          
 
 
+    @classmethod
+    def check_borrowings_history(cls,user_id,book_id):
+         
+         stm = "SELECT * FROM borrowings WHERE user_id = %s"
+         mycursor.execute(stm , (user_id,))
 
+         borrowed_history = mycursor.fetchall()
+         
+         if len(borrowed_history) < 4:
+    
+            for borrow in borrowed_history:
+                if borrow[0] == book_id :
+                        print("cbh false loop")
+                        return False
+            else:
+                 print("cbh True")
+                 return True
+                
+         else : 
+              print("cbh false lenth")
+              return False               
+
+         
 
 
     def browwer_book(self,book_id):
