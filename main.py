@@ -4,7 +4,8 @@ from user import User
 def main():
 
     LMS.all_book_list()
-    LMS.issue_book(1,4)
+    # LMS.issue_book(1,4)
+    LMS.return_books(2,2)
     # Book.get_all_books()  
     # User.get_all_users()
 

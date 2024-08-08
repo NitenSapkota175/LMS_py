@@ -50,9 +50,51 @@ class LMS:
                     if book.book_id == book_id : 
                             stm = "UPDATE books SET quantity = %s WHERE book_id = %s"
                             mycursor.execute(stm , ((book.quantity - 1) , book_id))
+                            book.quantity = book.quantity - 1
                             mydb.commit()
+                            break
 
 
-    
-    def return_books(self):
-            pass
+    @classmethod
+    def return_books(cls,user_id,book_id):
+            
+
+
+            stm = "SELECT issue_date , return_date FROM borrowings WHERE user_id=%s and book_id=%s"
+            mycursor.execute(stm , (user_id,book_id))
+            borrow_dates = mycursor.fetchone()
+            if borrow_dates: 
+                issue_date , return_date = borrow_dates
+                if return_date <= datetime.date.today() and  (issue_date < return_date and return_date > datetime.date.today()) :
+                        LMS.delete_borrowing_records(user_id,book_id)
+                        print("thankyou for return the book on time")
+                
+                #     if return_date > issue_date + datetime.timedelta(14):
+                else:
+                            print("You have return late and charged with fine") 
+                            LMS.pay_fine()
+            else:
+                    print("Record not found")
+
+
+    @classmethod
+    def delete_borrowing_records(cls, user_id ,book_id):
+               
+               
+                    stm = "DELETE FROM borrowings WHERE user_id=%s and book_id=%s"
+                    mycursor.execute(stm , (user_id,book_id))
+                    mydb.commit()
+
+                    for book in cls.list_of_books:
+                            
+                            if book.book_id == book_id : 
+                                    stm = "UPDATE books SET quantity = %s WHERE book_id = %s"
+                                    mycursor.execute(stm , ((book.quantity +1) , book_id))
+                                    book.quantity = book.quantity + 1
+                                    mydb.commit()
+                                    break
+                            
+
+    @classmethod 
+    def pay_fine(cls):
+                pass
