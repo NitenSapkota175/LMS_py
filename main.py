@@ -3,9 +3,11 @@ from lms import LMS
 from user import User
 def main():
 
-    LMS.all_book_list()
+    # LMS.all_book_list()
     # LMS.issue_book(1,4)
-    LMS.return_books(2,2)
+    LMS.issue_book(3,7)
+    # LMS.issue_book(2,1)
+    # LMS.return_books(2,1)
     # Book.get_all_books()  
     # User.get_all_users()
 

@@ -45,17 +45,15 @@ class User:
          borrowed_history = mycursor.fetchall()
          
          if len(borrowed_history) < 4:
-    
+            
             for borrow in borrowed_history:
                 if borrow[0] == book_id :
-                        print("cbh false loop")
+
                         return False
-            else:
-                 print("cbh True")
-                 return True
+            
+            return True
                 
          else : 
-              print("cbh false lenth")
               return False               
 
          
@@ -64,8 +62,7 @@ class User:
     def browwer_book(self,book_id):
         self.borrowing_history.append(book_id)
     
-    def return_book(self):
-        pass
+   
     
     def view_borrowing_history(self):
         
@@ -73,7 +70,4 @@ class User:
             return False
         else:
             return True
-    
-    def pay_fine(self):
-        pass
     

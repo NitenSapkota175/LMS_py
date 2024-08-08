@@ -28,7 +28,7 @@ class LMS:
                                     LMS.borrow_books(user_id , book_id)
 
                         else:
-                                print("you cannot borrow")
+                                print("You cannot borrow 4 books at time ")
                         
                 else:
                         print("User not present")
@@ -72,7 +72,9 @@ class LMS:
                 #     if return_date > issue_date + datetime.timedelta(14):
                 else:
                             print("You have return late and charged with fine") 
-                            LMS.pay_fine()
+                            LMS.pay_fine(user_id)
+                            LMS.delete_borrowing_records(user_id,book_id)
+                            print("Thankyou")
             else:
                     print("Record not found")
 
@@ -96,5 +98,15 @@ class LMS:
                             
 
     @classmethod 
-    def pay_fine(cls):
-                pass
+    def pay_fine(cls,user_id):
+                stm = "SELECT fines FROM users WHERE user_id=%s"
+                mycursor.execute(stm , (user_id,))
+                Tfines = mycursor.fetchall()
+                print("Please pay rs : ",Tfines[0])
+                paid = input("Enter yes if fine had been paid : ")
+                if paid.lower() == 'yes':
+                        stm = "UPDATE users SET fines=%s WHERE user_id=%s"
+                        mycursor.execute(stm,(0 , user_id) )
+                        mydb.commit()
+                else:
+                        print("please try again later")
